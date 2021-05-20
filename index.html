@@ -12,54 +12,31 @@
  
 <!-- reset css -->
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'/>
+<link rel="stylesheet" href="styles/styles.css">
  
 <style>
-/*****  
-Elementos reutilizables (colores, tipografías…)
-Comentarios generales...
- 
-*****/ 
- 
- 
-/*****  TEST
- 
-* { outline: 1px solid orange; } 
- 
-img[alt=''] { outline: 6px dashed orange; }
-img:not([alt]) { outline: 6px dashed red; } 
- 
-*****/
- 
- 
-/*****  ESTRUCTURA *****/
- 
-* { box-sizing: border-box; }
- 
- 
- 
-/*****  TIPOGRAFIA *****/
- 
-html { font-size: 10px; }
- 
- 
-/*****  ESTETICA *****/
- 
- 
-/*****  MEDIA QUERIES *****/
- 
- 
- 
+
 </style>
  
  
 </head>
 <body>
-   <h1>Dad Jokes Generator</h1>
-   <h2>El tiempo de hoy en Barcelona será: </h2>
-   <div id="weather"></div>
+   <div class="container">
+      <h1 class="content">Dad Jokes Generator</h1>
+   </div>
+   <div class="container">
+      <h2 class="content">El tiempo de hoy en Barcelona será: </h2>
+   </div>
+   <div class="container">
+      <div id="weather" class="content"></div>
+   </div>
+   <div class="container">
+         <button id="jokeButton" class="content">Empieza tu dia con un chiste!</button>
+   </div>
+   <div class="container">
+      <div id="output" class="content"></div>
+   </div>
 
-   <button id="jokeButton">Get a joke to start your day on fire!</button>
-   <div id="output"></div>
  <script src="index.js"></script>
 
 </body>

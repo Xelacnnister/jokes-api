@@ -19,8 +19,7 @@ async function weather(){
     })
     .then((resp) => resp.json())
     // .then(data => console.log(data.today));
-    .then(data => document.getElementById("weather").innerHTML = data.today.p)  
-    // .then(data => document.getElementById("weather").innerHTML = data.today.p);  
+    .then(data => document.getElementById("weather").innerHTML = data.today.p)    
 }
 
 weather();
